@@ -1,0 +1,15 @@
+[
+    {
+        "base" : "/CustomSkin",
+        "rule" : {
+            "/{username}.json" : "API.CustomSkin:user",
+            "/textures/{id}" : "API.CustomSkin:res"
+        }
+    },
+    {
+        "base" : "/",
+        "rule" : {
+            "upload" : "API.Upload:main"
+        }
+    }
+]

@@ -1,0 +1,32 @@
+{
+
+    "System" : {
+
+        "Error" : "错误",
+        "WeHadRecordThisError" : "我们已经记录这次错误，给您带来不便，抱歉！",
+        "jumpNow" : "立即跳转",
+        "SecondsAfterAutoJump" : "秒后自动跳转",
+        "BackHome" : "返回首页"
+
+    },
+
+    "Index" : {
+
+        "Login" : "登陆",
+        "Reg" : "注册"
+
+    },
+
+    "Reg" : {
+        "Reg" : "一个能用的注册页"
+    },
+
+    "Login" : {
+        "Login" : "一个能用的登陆页"
+    },
+
+    "Manage" : {
+        "Manage" : "一个能用的管理页"
+    }
+
+}

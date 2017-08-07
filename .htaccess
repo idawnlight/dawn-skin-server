@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^.*$ index.php [L]
+
+RewriteRule ^Var - [F,L]
+RewriteRule ^App - [F,L]
+RewriteRule ^Lib - [F,L]
