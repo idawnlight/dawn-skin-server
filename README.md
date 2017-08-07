@@ -29,6 +29,11 @@ location ^~ /Var/ {
 }
 ```
 
+# 客户端配置
+目前仅支持 [CustomSkinLoader](https://github.com/xfl03/MCCustomSkinLoader)
+
+请将 LoadList 中的 root 指定为 /CustomSkin/
+
 # 版权
 
 Dawn Skin Server 程序是基于 GNU General Public License v3.0 开放源代码的自由软件，你可以遵照 GPLv3 协议来修改和重新发布这一程序。
