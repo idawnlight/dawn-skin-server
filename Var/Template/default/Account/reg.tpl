@@ -17,7 +17,13 @@
 
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">{{ $L['Login']['Password'] }}</label>
-        <input class="mdui-textfield-input" type="password" name="password" required onkeypress="$.getKey();" />
+        <input class="mdui-textfield-input" type="password" name="password" id="Password" required onkeypress="$.getKey();" />
+        <div class="mdui-textfield-error">{{ $L['Login']['PasswordWarn'] }}</div>
+      </div>
+
+      <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">{{ $L['Reg']['PasswordVer'] }}</label>
+        <input class="mdui-textfield-input" type="password" name="passwordVer" id="PasswordVer" required onkeypress="$.getKey();" />
         <div class="mdui-textfield-error">{{ $L['Login']['PasswordWarn'] }}</div>
       </div>
 
@@ -65,6 +71,13 @@
     <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>{{ $L['Reg']['Retry'] }}</button>
   </div>
 </div>
+<div class="mdui-dialog" id="ver">
+  <div class="mdui-dialog-title">{{ $L['Reg']['Fail'] }}</div>
+  <div class="mdui-dialog-content">{{ $L['Reg']['VerMsg'] }}</div>
+  <div class="mdui-dialog-actions">
+    <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>{{ $L['Reg']['Retry'] }}</button>
+  </div>
+</div>
 <script type="text/javascript">
 function Async() {
  //定义一个全局变量来接受$post的返回值
@@ -95,6 +108,8 @@ getKey: function() {
          var inst = new mdui.Dialog('#id');
      } else if (obj.status == "empty") {
          var inst = new mdui.Dialog('#empty');
+     } else if (obj.status == "ver") {
+         var inst = new mdui.Dialog('#ver');
      }
      inst.open();
      if (obj.status == "success") {
@@ -120,6 +135,8 @@ $(document).ready(function(){
           var dialog = document.getElementById('id');
       } else if (obj.status == "empty") {
           var inst = new mdui.Dialog('#empty');
+      } else if (obj.status == "ver") {
+          var inst = new mdui.Dialog('#ver');
       }
       inst.open();
       //dialog.addEventListener('close.mdui.dialog', function () {
@@ -134,5 +151,4 @@ $(document).ready(function(){
 function jump() {
     window.location='{{ $GLOBALS["DSS"]["root"] }}account';
 }
-
 </script>

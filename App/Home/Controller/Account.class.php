@@ -17,6 +17,7 @@
                 $name = test_input($_POST["name"]);
                 $password = test_input($_POST["password"]);
                 $id = test_input($_POST["id"]);
+                $passwordVer = test_input($_POST["passwordVer"]);
                 if (empty($name) || empty($password) || empty($id)) {
                     header("content-type: application/json");
                     echo '{"status": "empty"}';
@@ -26,17 +27,22 @@
                     //print_r($db->get("Users.where[name={$_POST["name"]}]"));  //Get the Data from Config table.
                     if (empty($db->get("Users.where[name={$name}]"))) {
                         if (empty($db->get("Users.where[id={$id}]"))) {
-                            $db->ins("Users", array("name"=>$name, "id"=>$id,
-                                                    "password"=>password_hash($password, PASSWORD_DEFAULT),
-                                                    "skin"=>"83af9d073270f3d18917ff0093d7a3161868f9c072d1e6605b3a2ca7e859b5eb",
-                                                    "type"=>"default",
-                                                    "cape"=>"7921a79d51b87781c94a285e1e8c32a07058960048e473f46d72b65f77f44641",
-                                                    "useCape"=>false,
-                                                    "time"=>time()));
-                            $_SESSION["login"] = true;
-                            $_SESSION["name"] = $name;
-                            header("content-type: application/json");
-                            echo '{"status": "success"}';
+                            if ($passwordVer == $password) {
+                                $db->ins("Users", array("name"=>$name, "id"=>$id,
+                                                        "password"=>password_hash($password, PASSWORD_DEFAULT),
+                                                        "skin"=>"83af9d073270f3d18917ff0093d7a3161868f9c072d1e6605b3a2ca7e859b5eb",
+                                                        "type"=>"default",
+                                                        "cape"=>"7921a79d51b87781c94a285e1e8c32a07058960048e473f46d72b65f77f44641",
+                                                        "useCape"=>false,
+                                                        "time"=>time()));
+                                $_SESSION["login"] = true;
+                                $_SESSION["name"] = $name;
+                                header("content-type: application/json");
+                                echo '{"status": "success"}';
+                            } else {
+                                header("content-type: application/json");
+                                echo '{"status": "ver"}';
+                            }
                         } else {
                             header("content-type: application/json");
                             echo '{"status": "id"}';
