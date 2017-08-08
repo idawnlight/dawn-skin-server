@@ -17,6 +17,7 @@
     define("SysDir",dirname(__FILE__).'/');
     define("LibDir",SysDir.'Lib/');
     define("AppDir",SysDir.'App/');
+	define("ResDir",SysDir.'Res/');
     define("TemplateDir",SysDir.'Var/Template/');
     define("LangDir",SysDir.'Var/Lang/');
     define("DatDir",SysDir.'Var/Data/');
@@ -32,6 +33,8 @@
 
     XDO::setDir(DatDir);
     XDO::$Cache = false; //Disable the cache
+
+    require(SysDir. 'Init.php');
 
     foreach(XDOTool::listDir(RouteDir,0) as $v){
         Route::load(RouteDir. $v);

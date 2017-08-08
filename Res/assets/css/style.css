@@ -1,0 +1,432 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/minecraft.eot);
+}
+body {
+    font-family: Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+.dss-main-title {
+    font-family: Minecraft, Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif!important;
+    font-size: 110%;
+}
+/* Header */
+.dss-header {
+    color: #fff!important;
+    background-color: #1d8ae5!important;
+}
+/* 卡片 */
+.mdui-card {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    height: auto;
+    width: auto;
+    min-width: 350px;
+}
+.mdui-textfield, .mdui-card-primary {
+    position: relative;
+    left: 15px;
+    width: 96%;
+    max-width: 1000px;
+}
+button.reg {
+    position: relative;
+    left: 15px;
+    top: -10px;
+}
+/* Manage */
+.dss-manage-main {
+    width: 50%;
+    /*min-width: 300px;*/
+}
+/* 最外层 */
+.dss-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+@media (min-width: 480px) {
+  .dss-container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 840px) {
+  .dss-container {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+/* 页面标题 */
+h1.dss-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  color: #1d8ae5!important;
+}
+@media (min-width: 480px) {
+  h1.dss-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 840px) {
+  h1.dss-title {
+    font-size: 34px;
+    line-height: 40px;
+    margin: 0 400px 30px 0;
+  }
+}
+/* 组件介绍 */
+.dss-intro {
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 0 0 48px 0;
+}
+@media (min-width: 480px) {
+  .dss-intro {
+    padding: 0 0 54px 0;
+  }
+}
+@media (min-width: 840px) {
+  .dss-intro {
+    padding: 0 0 60px 0;
+    margin-right: 400px;
+  }
+}
+.dss-no-cover .dss-intro {
+  margin-right: 0;
+}
+.dss-intro p:last-child {
+  margin-bottom: 0;
+}
+/* 组件介绍中的子模块 */
+.dss-intro-module {
+  font-size: 14px;
+  margin-top: 40px;
+}
+.dss-intro-module h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+.dss-intro-module p {
+  margin-bottom: 1em;
+}
+/* 目录 */
+.dss-toc {
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+  border-left: 3px solid;
+}
+.dss-toc a {
+  text-decoration: none;
+  color: inherit;
+}
+.dss-toc:before {
+  content: 'Contents';
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #757575;
+}
+.dss-toc ul,
+.dss-toc:before {
+  padding-left: 16px;
+}
+.dss-toc ul {
+  list-style: none;
+  margin: 0;
+}
+.dss-toc ul li {
+  margin: 1em 0;
+}
+.dss-toc ul li:first-child {
+  margin-top: 0;
+}
+.dss-toc ul li:last-child {
+  margin-bottom: 0;
+}
+.dss-toc ul li ul {
+  margin: 1em 0;
+  font-size: 0.83em;
+}
+.dss-toc > ul {
+  margin-top: 1em;
+}
+@media (min-width: 480px) {
+  .dss-toc {
+    font-size: 17px;
+    border-left-width: 4px;
+  }
+  .dss-toc ul,
+  .dss-toc:before {
+    padding-left: 18px;
+  }
+}
+@media (min-width: 840px) {
+  .dss-toc {
+    font-size: 18px;
+    border-left-width: 5px;
+    margin-right: 400px;
+  }
+  .dss-toc ul,
+  .dss-toc:before {
+    padding-left: 20px;
+  }
+}
+.dss-no-cover .dss-toc {
+  margin-right: 0;
+}
+/* 封面图 */
+.dss-cover {
+  display: none;
+}
+@media (min-width: 840px) {
+  .dss-cover {
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 80px;
+  }
+  .dss-cover img {
+    width: 360px;
+    height: 360px;
+  }
+}
+/* 正文 */
+.dss-chapter {
+  margin: 20px 0 0 0;
+  padding: 0 0 80px 0;
+}
+.dss-chapter-title {
+  margin-top: 2em !important;
+  position: relative;
+  padding: 80px 0 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.mdui-theme-layout-dark .dss-chapter-title {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.dss-chapter-title .dss-anchor {
+  position: absolute;
+  top: -40px;
+}
+.dss-chapter-title-first {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
+/* 正文小章节标题 */
+.dss-article-title {
+  position: relative;
+  margin: 84px 0 30px 0 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+.dss-article-title .dss-anchor {
+  position: absolute;
+  top: -100px;
+}
+
+/**
+ * ==============================================================
+ * ======================================================= 底部翻页
+ */
+/* 底部翻页 */
+.dss-footer-nav {
+  height: 96px;
+}
+.dss-footer-nav-left,
+.dss-footer-nav-right {
+  height: 96px;
+}
+.dss-footer-nav-left {
+  text-align: left;
+}
+.dss-footer-nav-right {
+  text-align: right;
+}
+.dss-footer-nav-text {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  line-height: 24px;
+  padding-top: 24px;
+  width: 100%;
+}
+.dss-footer-nav-text .mdui-icon {
+  padding-top: 23px;
+  width: 24px;
+}
+.dss-footer-nav-text .dss-footer-nav-direction {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 1px;
+  opacity: 0.55;
+}
+.dss-footer-nav-left .mdui-icon {
+  float: left;
+  margin-right: 10px;
+}
+.dss-footer-nav-right .mdui-icon {
+  float: right;
+  margin-left: 10px;
+}
+.dss-footer-nav-left .dss-footer-nav-chapter {
+  margin-left: 34px;
+}
+.dss-footer-nav-right .dss-footer-nav-chapter {
+  margin-right: 34px;
+}
+.mdui-theme-layout-dark .dss-footer-nav {
+  background-color: #212121 !important;
+}
+.mdui-theme-layout-dark .dss-footer-nav-left,
+.mdui-theme-layout-dark .dss-footer-nav-right {
+  background-color: #212121 !important;
+}
+.mdui-theme-layout-dark .dss-footer-nav-text {
+  color: #fff;
+}
+
+/**
+ * ===============================================================
+ * =========================================================== 演示
+ */
+.dss-example {
+  position: relative;
+  margin-bottom: 2.6em;
+}
+/* 实例演示 */
+.dss-example-demo {
+  padding: 0;
+  -webkit-transition: padding .3s;
+  -moz-transition: padding .3s;
+  -ms-transition: padding .3s;
+  -o-transition: padding .3s;
+  transition: padding .3s;
+}
+.dss-example-demo:after {
+  clear: both;
+  display: table;
+  content: ' ';
+}
+
+/* Example 文字 */
+.dss-example-demo-label {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1;
+  padding: 9px 14px;
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: 700;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 3px 3px 0 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mdui-theme-layout-dark .dss-example-demo-label {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.5);
+}
+/* 实例代码 */
+.dss-example-code {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  padding: 14px !important;
+  margin: 0;
+  display: none;
+}
+.mdui-theme-layout-dark .dss-example-code {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.dss-example-code code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 1.7;
+  padding: 0;
+}
+/* 代码中关键类名高亮 */
+.dss-example-code-required {
+  padding: 2px;
+  background-color: #E8EAF6;
+}
+.dss-example-code-required * {
+  color: #FF4081;
+}
+/* 代码中添加链接 */
+.dss-example-code a {
+  text-decoration: none;
+}
+.dss-example-tools {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: top .3s;
+  -moz-transition: top .3s;
+  -ms-transition: top .3s;
+  -o-transition: top .3s;
+  transition: top .3s;
+}
+.dss-example-tools a {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0 8px;
+}
+.dss-example-tools a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.mdui-theme-layout-dark .dss-example-tools a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.mdui-theme-layout-dark .dss-example-tools a:hover {
+  color: #ffffff;
+}
+.dss-example-showcode .dss-example-demo {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: none;
+  padding: 14px;
+}
+.mdui-theme-layout-dark .dss-example-showcode .dss-example-demo {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.dss-example-showcode .dss-example-demo-label {
+  display: block;
+}
+.dss-example-showcode .dss-example-code {
+  display: block;
+}
+.dss-example-showcode .dss-example-tools {
+  top: 4px;
+}
+
+/**
+ * ============================================================
+ * =================================================== 常用工具类
+ */
+/* 小型的圆形 */
+.dss-color-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+/* 添加内边距 */
+.dss-box-padding {
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}

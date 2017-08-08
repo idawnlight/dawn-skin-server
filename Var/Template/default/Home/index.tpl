@@ -1,40 +1,18 @@
-    <body>
 
-        <style>
-            body{
-                margin:0;
-                padding:30px;
-                font:12px/1.5 "Microsoft Yahei UI",Helvetica,Arial,Verdana,sans-serif;
-            }
-            h1{
-                margin:0;
-                font-size:48px;
-                font-weight:normal;
-                line-height:48px;
-            }
-            h1{
-                margin:0;
-                font-size:38px;
-                font-weight:normal;
-                line-height:48px;
-            }
-            strong{
-                display:inline-block;
-                width:65px;
-            }
-        </style>
-
-        <table border="0" width="100%" height="100%">
-            <tr valign="middle" align="center">
-                <td><h1>Dawn Skin Server</h1></td>
-            </tr>
-            <tr valign="middle" align="center">
-                <td><h2><a href="account/login">{{ $L['Index']['Login'] }}</a> <a href="account/reg">{{ $L['Index']['Reg'] }}</a><h2></td>
-            </tr>
-            <tr valign="middle" align="center">
-                <td><h3>Version {{ $Version }}</h3></td>
-            </tr>
-        </table>
-
-    </body>
-</html>
+<a id="anchor-top"></a>
+<div class="mdui-container dss-container dss-no-cover">
+  <h1 class="dss-title">{{ $L['Index']['Welcome'] }}</h1>
+  <div class="dss-chapter">
+    <div class="mdui-typo">
+      <p>{{ $GLOBALS["DSS"]["intro"] }}</p>
+    </div>
+    <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-lg-4">
+      <div class="mdui-col mdui-m-b-1">
+        <a href="{{ $GLOBALS["DSS"]["root"] }}account/login" class="mdui-btn mdui-btn-block mdui-text-left mdui-ripple">登陆</a>
+      </div>
+      <div class="mdui-col mdui-m-b-1">
+        <a href="{{ $GLOBALS["DSS"]["root"] }}account/reg" class="mdui-btn mdui-btn-block mdui-text-left mdui-ripple">注册</a>
+      </div>
+    </div>
+  </div>
+</div>

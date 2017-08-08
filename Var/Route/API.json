@@ -1,15 +1,34 @@
 [
     {
-        "base" : "/CustomSkin",
+        "base" : "/CustomSkin/",
         "rule" : {
-            "/{username}.json" : "API.CustomSkin:user",
-            "/textures/{id}" : "API.CustomSkin:res"
+            "{username}.json" : "API.CustomSkin:user",
+            "textures/{id}" : "API.CustomSkin:res"
         }
     },
     {
         "base" : "/",
         "rule" : {
-            "upload" : "API.Upload:main"
+            "{username}.json" : "API.CustomSkin:user",
+            "textures/{id}" : "API.CustomSkin:res"
+        }
+    },
+    {
+        "base" : "/account/upload/",
+        "rule" : {
+            "skin" : "API.Upload:skin",
+            "cape" : "API.Upload:cape"
+        }
+    },
+    {
+        "base" : "/renderer/",
+        "rule" : {
+            "face/{id}" : "API.Renderer:face",
+            "face" : "API.Renderer:face",
+            "skin/{id}" : "API.Renderer:Skin",
+            "skin" : "API.Renderer:Skin",
+            "cape/{id}" : "API.Renderer:cape",
+            "cape" : "API.Renderer:cape"
         }
     }
 ]

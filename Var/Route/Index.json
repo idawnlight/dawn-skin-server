@@ -3,11 +3,7 @@
         "base" : "/",
         "rule" : {
             "index.html" : "Home.IndexController:index",
-            "" : "Home.IndexController:index",
-            "account/reg" : "Home.Account:reg",
-            "account/login" : "Home.Account:login",
-            "account/logout" : "Home.Account:logout",
-            "account" : "Home.Manage:main"
+            "" : "Home.IndexController:index"
         }
     }
 ]

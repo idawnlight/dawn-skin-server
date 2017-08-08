@@ -1,11 +1,27 @@
 {
     "System" : {
-        
+
         "Error" : "Error",
         "WeHadRecordThisError" : "We had record this error. Sorry!",
         "jumpNow" : "Jump Now",
         "SecondsAfterAutoJump" : "Seconds Left to jump",
         "BackHome" : "Goto Homepage"
-        
+
+    },
+
+    "Index" : {
+        "Welcome" : "Welcome"
+    },
+
+    "Sidebar" : {
+        "Start" : "Start",
+        "About" : "About",
+        "Welcome" : "Welcome",
+        "Login" : "Login",
+        "Reg" : "Register"
+    },
+
+    "Login" : {
+        "Login" : "Login"
     }
 }

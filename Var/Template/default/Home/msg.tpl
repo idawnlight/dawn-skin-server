@@ -1,42 +1,15 @@
-<body>
 
-    <style>
-        body{
-            margin:0;
-            padding:30px;
-            font:12px/1.5 "Microsoft Yahei UI",Helvetica,Arial,Verdana,sans-serif;
-        }
-        h1{
-            margin:0;
-            font-size:48px;
-            font-weight:normal;
-            line-height:48px;
-        }
-        h1{
-            margin:0;
-            font-size:38px;
-            font-weight:normal;
-            line-height:48px;
-        }
-        strong{
-            display:inline-block;
-            width:65px;
-        }
-    </style>
-
-    <table border="0" width="100%" height="100%">
-        <tr valign="middle" align="center">
-            <td><h1>Dawn Skin Server</h1></td>
-        </tr>
-        <tr valign="middle" align="center">
-            <td>
-                <p>{{ $msg }}</p>
-            </td>
-        </tr>
-        <tr valign="middle" align="center">
-            <td><h3>Version {{ $Version }}</h3></td>
-        </tr>
-    </table>
-
-</body>
-</html>
+<a id="anchor-top"></a>
+<div class="mdui-container dss-container dss-no-cover">
+  <h1 class="dss-title">{{ $L['Index']['Error'] }}</h1>
+  <div class="dss-chapter">
+    <div class="mdui-typo">
+      <p>{{ $msg }}</p>
+    </div>
+    <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-lg-4">
+      <div class="mdui-col mdui-m-b-1">
+        <a href="{{ $GLOBALS["DSS"]["root"] }}account" class="mdui-btn mdui-btn-block mdui-text-left mdui-ripple">{{ $L['Index']['Manage'] }}</a>
+      </div>
+    </div>
+  </div>
+</div>

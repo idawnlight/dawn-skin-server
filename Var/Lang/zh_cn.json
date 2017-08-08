@@ -11,22 +11,62 @@
     },
 
     "Index" : {
+        "Welcome" : "欢迎",
+        "Manage" : "返回管理",
+        "Error" : "错误"
+    },
 
+    "Sidebar" : {
+        "Start" : "开始使用",
+        "About" : "关于",
         "Login" : "登陆",
-        "Reg" : "注册"
-
+        "Reg" : "注册",
+        "Info" : "信息",
+        "Skin" : "皮肤",
+        "Manage" : "总览",
+        "Logout" : "登出"
     },
 
     "Reg" : {
-        "Reg" : "一个能用的注册页"
+        "Reg" : "注册",
+        "PlayerID" : "玩家 ID",
+        "PlayerIDWarn" : "玩家 ID 不能为空",
+        "Success" : "注册成功",
+        "SuccessMsg" : "您现在可以管理您的皮肤了",
+        "Fail" : "注册失败",
+        "NameMsg" : "用户名已被使用",
+        "IDMsg" : "游戏 ID 已被使用",
+        "Retry" : "重试",
+        "Login" : "管理",
+        "EmptyMsg" : "请勿留空"
     },
 
     "Login" : {
-        "Login" : "一个能用的登陆页"
+        "Login" : "登陆",
+        "Username" : "用户名",
+        "UsernameWarn" : "用户名不能为空",
+        "Password" : "密码",
+        "PasswordWarn" : "密码不能为空",
+        "Success" : "登陆成功",
+        "SuccessMsg" : "您现在可以管理您的皮肤了",
+        "Fail" : "登陆失败",
+        "FailMsg" : "用户名或密码错误"
     },
 
     "Manage" : {
-        "Manage" : "一个能用的管理页"
+        "Welcome" : "您好，",
+        "Intro" : "欢迎来到这里，轻触以下项目以进行更改",
+        "PlayerID" : "游戏 ID",
+        "Skin" : "皮肤",
+        "Cape" : "披风",
+        "Edit" : "编辑",
+        "EditPlayerID" : "输入新的游戏 ID",
+        "Confirm" : "确定",
+        "Cancel" : "取消",
+        "Used" : "游戏 ID 已被使用",
+        "Success" : "修改游戏 ID 成功",
+        "SkinNow" : "当前皮肤",
+        "CapeNow" : "当前披风"
     }
 
 }

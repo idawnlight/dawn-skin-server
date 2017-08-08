@@ -1,0 +1,14 @@
+[
+    {
+        "base" : "/",
+        "rule" : {
+            "account/reg" : "Home.Account:reg",
+            "account/login" : "Home.Account:login",
+            "account/logout" : "Home.Account:logout",
+            "account/edit" : "Home.Manage:edit",
+            "account" : "Home.Manage:main",
+            "account/skin" : "Home.Manage:skin",
+            "account/cape" : "Home.Manage:cape"
+        }
+    }
+]

@@ -18,15 +18,11 @@
                         "Page" => "Index"
                     );
                 $this->View("Public/header");
+                $this->View("Public/sidebar");
                 $this->View("Home/index");
+                $this->View("Public/footer");
             } else {
-                $this->Data = array(
-                        "Version" => $GLOBALS["DSS"]['Version'],
-                        "Page" => "Index",
-                        "msg" => "已登陆，<a href=\"account\">管理</a>，<a href=\"account/logout\">登出</a>"
-                    );
-                $this->View("Public/header");
-                $this->View("Home/msg");
+                header("Location: {$GLOBALS["DSS"]["root"]}account");
             }
 
 
