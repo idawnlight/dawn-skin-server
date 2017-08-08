@@ -12,7 +12,9 @@
 
     class Account extends Controller{
         public function reg(){
-
+            if ($_SESSION["login"]) {
+                header("Location: {$GLOBALS["DSS"]["root"]}account");
+            }
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $name = test_input($_POST["name"]);
                 $password = test_input($_POST["password"]);
@@ -68,7 +70,9 @@
         }
 
         public function login(){
-
+            if ($_SESSION["login"]) {
+                header("Location: {$GLOBALS["DSS"]["root"]}account");
+            }
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $name = test_input($_POST["name"]);
                 $password = test_input($_POST["password"]);

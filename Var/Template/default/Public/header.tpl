@@ -8,7 +8,7 @@
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <title>{{ $Page }} - {{ $GLOBALS["DSS"]["title"] }}</title><!-- 需要改变 -->
+  <title>{{ $Page }} - {{ $GLOBALS["DSS"]["title"] }}</title>
   <link rel="stylesheet" href="{{ $GLOBALS["DSS"]["root"] }}Res/assets/css/mdui.min.css"/>
   <link rel="stylesheet" href="{{ $GLOBALS["DSS"]["root"] }}Res/assets/css/style.css"/>
   <script src="{{ $GLOBALS["DSS"]["root"] }}Res/assets/js/jquery.min.js"></script>
@@ -18,7 +18,7 @@
 <header class="mdui-appbar mdui-appbar-fixed">
   <div class="mdui-toolbar dss-header">
     <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer'}"><i class="mdui-icon material-icons">menu</i></span>
-    <a href="./" class="mdui-typo-headline mdui-hidden-xs dss-main-title">{{ $GLOBALS["DSS"]["title"] }}</a>
+    <a href="#" class="mdui-typo-headline mdui-hidden-xs dss-main-title">{{ $GLOBALS["DSS"]["title"] }}</a>
         <div class="mdui-toolbar-spacer"></div>
   </div>
 </header>
