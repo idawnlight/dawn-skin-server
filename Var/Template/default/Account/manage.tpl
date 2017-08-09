@@ -13,6 +13,8 @@
   </div>
 </div>
 <script>
+var nowid = "{{ $id }}";
+
 $('#chgID').submit(function() {
   return false;
 });
@@ -38,7 +40,7 @@ edit: function() {
      edit.open();
      var dialog = document.getElementById('edit');
      dialog.addEventListener('confirm.mdui.dialog', function send() {
-         if ($("input#newid").val() !== "{{ $id }}" && $("input#newid").val() !== "") {
+         if ($("input#newid").val() !== nowid && $("input#newid").val() !== "") {
              var res = Async();
              //console.log(res);
              if (res.status == "used") {
@@ -50,6 +52,11 @@ edit: function() {
                      message: '{{ $L['Manage']['Success'] }}'
                  });
                  $('span#playerid').html($("input#newid").val());
+                 nowid = $("input#newid").val();
+             } else if (res.status == "empty") {
+                 mdui.snackbar({
+                     message: '{{ $L['Manage']['Empty'] }}'
+                 });
              }
          }
      });
@@ -58,7 +65,7 @@ edit: function() {
 $.extend({
 getKey: function() {
  if(event.keyCode==13){
-     if ($("input#newid").val() !== "{{ $id }}" && $("input#newid").val() !== "") {
+     if ($("input#newid").val() !== nowid && $("input#newid").val() !== "") {
          var res = Async();
          //console.log(res);
          if (res.status == "used") {
@@ -70,6 +77,11 @@ getKey: function() {
                  message: '{{ $L['Manage']['Success'] }}'
              });
              $('span#playerid').html($("input#newid").val());
+             nowid = $("input#newid").val();
+         } else if (res.status == "empty") {
+             mdui.snackbar({
+                 message: '{{ $L['Manage']['Empty'] }}'
+             });
          }
          edit.close();
      }

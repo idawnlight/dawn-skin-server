@@ -69,7 +69,8 @@
         "Used" : "游戏 ID 已被使用",
         "Success" : "修改游戏 ID 成功",
         "SkinNow" : "当前皮肤",
-        "CapeNow" : "当前披风"
+        "CapeNow" : "当前披风",
+        "Empty" : "游戏 ID 不能为空"
     }
 
 }
