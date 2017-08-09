@@ -1,6 +1,7 @@
 @font-face {
     font-family: Minecraft;
     src: url(../fonts/minecraft.eot);
+    src: url(../fonts/minecraft.eot) format("embedded-opentype"), url(../fonts/minecraft.woff2) format("woff2"), url(../fonts/minecraft.woff) format("woff"), url(../fonts/minecraft.ttf) format("truetype"), url(../fonts/minecraft.svg#minecraft) format("svg")
 }
 body {
     font-family: Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
