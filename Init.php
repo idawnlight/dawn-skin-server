@@ -1,10 +1,12 @@
 <?php
 
 use XDO\XDO;
+use X\Error;
+
 
 $db = XDO::Database("System");
 
-$GLOBALS["DSS"]["version"] = "Alpha 0.1.0";
+$GLOBALS["DSS"]["version"] = "Alpha 0.1.1";
 if ($GLOBALS['_C']['RouteBase']=="") {
 	$GLOBALS["DSS"]["root"] = "/";
 } else {
@@ -12,4 +14,8 @@ if ($GLOBALS['_C']['RouteBase']=="") {
 }
 $GLOBALS["DSS"]["title"] = current($db->get("Config.where[name=title]"))["value"];
 $GLOBALS["DSS"]["head"] = current($db->get("Config.where[name=head]"))["value"];
-$GLOBALS["DSS"]["intro"] = current($db->get("Config.where[name=intro]"))["value"];
+if (is_writeable("Var/Data/Database/Account/Users/Data.json") && is_writeable("Var/Data/Database/Res/Capes/Data.json") && is_writeable("Var/Data/Database/Res/Skins/Data.json") && is_writeable("Var/Data/Database/System/Config/Data.json")) {
+
+} else {
+    Error::HTTP_E(503, "没有写入权限");
+}

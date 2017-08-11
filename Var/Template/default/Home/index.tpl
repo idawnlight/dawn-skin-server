@@ -4,7 +4,7 @@
   <h1 class="dss-title">{{ $L['Index']['Welcome'] }}</h1>
   <div class="dss-chapter">
     <div class="mdui-typo">
-      <p>{{ $GLOBALS["DSS"]["intro"] }}</p>
+      <p>{{ $Intro }}</p>
     </div>
     <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-lg-4">
       <div class="mdui-col mdui-m-b-1">

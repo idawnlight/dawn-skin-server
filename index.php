@@ -1,16 +1,16 @@
 <?php
     /**
      * This file is a part of XPHP.
-     * 
+     *
      * You may read the LICENSE file to
      * know what you can do.
-     * 
+     *
      * @pacakge XPHP
      * @author xtl<xtl@xtlsoft.top>
      * @license MIT
-     * 
+     *
      */
-    
+
     use X\Autoloader;
     use X\Error;
     use X\Route;
@@ -18,7 +18,7 @@
     use X\Log;
     use XDO\Tool as XDOTool;
     use XDO\XDO;
-    
+
     /*********************************/ //@@@@@@@@@@@@@@@@@@
     /*--- Define Path And Version ---*/
     ##################################
@@ -35,46 +35,51 @@
     ##################################
           /* --- Define End --- */
     /*********************************/ //@@@@@@@@@@@@@@@@@@
-    
+
     //Require the BASE Config file
     require(SysDir. 'Config.php');
-    
+
     //Require XPHP Embedded Library Autoloader
     require_once(LibDir.'X/Autoloader.php');
-    
+
     //Require Composer Autoloader
     require_once(ComposerDir.'autoload.php');
-    
+
     //Load Logger
     Autoloader::load("X\\Log");
-    
+
     //Load Error Proccesser
     Autoloader::load("X\\Error");
-    
+
     //Init the session (Actions with session could do in Config.php)
     @session_start();
-    
+
     //Set XDO Dir
     XDO::setDir(DatDir);
 	//Disable XDO Cache
 	XDO::$Cache = false;
-	
+
 	//Some Dawn Skin Server Settings
 	require(SysDir. 'Init.php');
-    
+
+    //Check install
+    if (!file_exists("install.lock")) {
+        header("Location: {$GLOBALS["DSS"]["root"]}Setup/");
+    }
+
     //List the routes
     foreach(XDOTool::listDir(RouteDir,0) as $v){
         //Load the Route
         Route::load(RouteDir. $v);
     }
-    
+
     //Run Application
     if(Route::$isLoad){
         App::Run(Route::$Application,Route::$Controller,Route::$Action,Route::$var);
     }else{
         Error::HTTP_E(404);
     }
-    
+
       ###############################################
      /*--------Stop-Reading-Start-Writing!---------*/
     ################################################

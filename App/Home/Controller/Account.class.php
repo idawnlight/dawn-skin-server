@@ -36,7 +36,8 @@
                                                         "type"=>"default",
                                                         "cape"=>"7921a79d51b87781c94a285e1e8c32a07058960048e473f46d72b65f77f44641",
                                                         "useCape"=>false,
-                                                        "time"=>time()));
+                                                        "time"=>time(),
+                                                        "permissions"=>"user"));
                                 $_SESSION["login"] = true;
                                 $_SESSION["name"] = $name;
                                 header("content-type: application/json");
