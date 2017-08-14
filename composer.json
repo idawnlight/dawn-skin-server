@@ -1,20 +1,27 @@
 {
-    "name": "xtlsoft/xphp",
-    "description": "A Simple PHP Framework",
-    "type": "project",
+    "name": "LiMingYuGuang/dawn-skin-server",
+    "description": "Another web application brings your custom skins back in offline Minecraft servers.",
+	"license": "GPL-3.0",
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5.38",
         "xtlsoft/xdo": "^0.1.2",
         "ircmaxell/filterus": "^1.0",
         "j4mie/idiorm": "^1.5",
         "monolog/monolog": "^1.23",
-        "phpmailer/phpmailer": "^5.2"
+        "phpmailer/phpmailer": "^5.2",
+		"games647/minecraft-skin-renderer": "0.2.1",
+        "abeautifulsite/simpleimage": "3.3.2"
     },
-    "license": "MIT",
     "authors": [
         {
-            "name": "xtlsoft",
-            "email": "xtlsoft@126.com"
+			"name": "LiMingYuGuang",
+			"email": "i@emiria.moe"
         }
-    ]
+    ],
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
 }

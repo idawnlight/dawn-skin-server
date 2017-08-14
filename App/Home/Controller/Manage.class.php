@@ -25,7 +25,7 @@
                 $this->View("Public/sidebar-manage");
                 echo "<script>$(\"div.mdui-collapse-item:eq(0)\").addClass(\"mdui-collapse-item-open\");</script>";
                 echo "<script>$(\"a.mdui-list-item:eq(0)\").addClass(\"mdui-list-item-active\");</script>";
-                $this->View("Account/manage");
+                $this->View("Account/index");
                 $this->View("Public/footer");
             } else {
                 header("Location: {$GLOBALS["DSS"]["root"]}account/login");

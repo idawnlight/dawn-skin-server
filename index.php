@@ -28,6 +28,7 @@
     define("LibDir",SysDir.'Lib/'); //XPHP Embedded Library Directory
     define("AppDir",SysDir.'App/'); //XPHP Application Directory
     define("TemplateDir",SysDir.'Var/Template/'); //XPHP Template Directory
+    define("ResDir",SysDir.'Res/'); //XPHP Template Directory
     define("LangDir",SysDir.'Var/Lang/'); //XPHP Language Directory
     define("DatDir",SysDir.'Var/Data/'); //XDO Data Directory
     define("RouteDir",SysDir.'Var/Route/'); //XPHP Route Directory

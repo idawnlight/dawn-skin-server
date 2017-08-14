@@ -9,4 +9,6 @@ return array(
     'XDO\\' => array($vendorDir . '/xtlsoft/xdo'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'MinecraftSkins\\' => array($vendorDir . '/games647/minecraft-skin-renderer/src'),
+    '' => array($vendorDir . '/league/color-extractor/src'),
 );
