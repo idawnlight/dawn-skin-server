@@ -52,8 +52,8 @@
                 $id = current($db->get("Users.where[name={$_SESSION["name"]}]"))["cape"];
             }
             if (file_exists(ResDir . $id . ".png")) {
-                $x2 = getimagesize (ResDir . $id . ".png")[0]/6;
-                $y2 = getimagesize (ResDir . $id . ".png")[1]/2;
+                $x2 = getimagesize (ResDir . $id . ".png")[0]/6+2;
+                $y2 = getimagesize (ResDir . $id . ".png")[1]/2+2;
                 try {
                     // Create a new SimpleImage object
                     $image = new \claviska\SimpleImage();
@@ -63,7 +63,7 @@
                     ->fromFile(ResDir . $id . ".png")
                     ->autoOrient()
                     ->crop(0, 0, $x2, $y2)
-                    ->resize(38, 60)
+                    ->resize(76, 118)
                     ->toScreen();
 
                       // And much more! 💪
