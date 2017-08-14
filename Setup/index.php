@@ -4,8 +4,7 @@ if (file_exists("../install.lock")) {
     $install = "error";
     $msg = "Dawn Skin Server 似乎已安装，如果未正确安装请尝试删除 <code>install.lock</code>";
 }
-if (is_writeable("../Var/Data/Database/Account/Users/Data.json") && is_writeable("../Var/Data/Database/Res/Capes/Data.json") && is_writeable("../Var/Data/Database/Res/Skins/Data.json") && is_writeable("../Var/Data/Database/System/Config/Data.json")) {
-} else {
+if (!is_writeable(DatDir . "Models.json")) {
     $install = "error";
     $msg = "Dawn Skin Server 无法获得服务器的写入权限";
 }
