@@ -4,7 +4,7 @@
 
 超轻量的 Minecraft 皮肤站，仅仅保留最基本的功能，现在，回应您的等待。
 
-Dawn Skin Server 基于 [XPHP](https://github.com/xtlsoft/XPHP) 与 [XDO](https://github.com/xtlsoft/XDO) 打造，无需 MySQL 等数据库与安装，真正做到开箱即用。
+Dawn Skin Server 基于 [XPHP](https://github.com/xtlsoft/XPHP) 与 [XDO](https://github.com/xtlsoft/XDO) 打造，无需烦琐的配置，真正做到开箱即用。
 
 演示站点：[https://skin.lim-light.com/](https://skin.lim-light.com/)
 
