@@ -1,4 +1,5 @@
 <?php
+define("DatDir",'../Var/Data/'); //XDO Data Directory
 $install = "ok";
 if (file_exists("../install.lock")) {
     $install = "error";
@@ -11,7 +12,6 @@ if (!is_writeable(DatDir . "Models.json")) {
 
 use XDO\XDO;
 use XDO\Tool as XDOTool;
-define("DatDir",'../Var/Data/'); //XDO Data Directory
 require_once("../vendor/xtlsoft/xdo/Autoload.php");
 XDO::setDir(DatDir);
 XDO::$Cache = false;
