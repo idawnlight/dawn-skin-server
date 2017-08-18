@@ -16,24 +16,23 @@ body {
     background-color: #1d8ae5!important;
 }
 /* 卡片 */
-.mdui-card {
+.dss-auth {
     position: relative;
-    top: 20px;
-    left: 30px;
-    height: auto;
-    width: auto;
-    min-width: 350px;
+    padding-left: 2%;
 }
-.mdui-textfield, .mdui-card-primary {
+.mdui-textfield {
     position: relative;
-    left: 15px;
-    width: 96%;
-    max-width: 1000px;
+    width: 95%;
+}
+.dss-skin {
+    position: relative;
+    left: 3%;
+    padding-bottom: 5%;
 }
 button.reg {
     position: relative;
-    left: 15px;
-    top: -10px;
+    top: -15px;
+    left: 10px;
 }
 /* Manage */
 .dss-manage-main {

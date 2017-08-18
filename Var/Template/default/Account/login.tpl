@@ -1,34 +1,44 @@
 <div class="mdui-container dss-container dss-no-cover">
-<div class="mdui-card mdui-hoverable">
+  <div class="mdui-row-xs-2">
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable dss-auth">
 
-  <!-- 卡片的标题和副标题 -->
-  <div class="mdui-card-primary">
-    <div class="mdui-card-primary-title">{{ $L['Login']['Login'] }}</div>
-  </div>
-
-  <!-- 卡片的内容 -->
-  <div class="mdui-card-content">
-      <form method="post" action="">
-      <div class="mdui-textfield mdui-textfield-floating-label">
-        <label class="mdui-textfield-label">{{ $L['Login']['Username'] }}</label>
-        <input class="mdui-textfield-input" type="text" name="name" onkeypress="$.getKey();" required/>
-        <div class="mdui-textfield-error">{{ $L['Login']['UsernameWarn'] }}</div>
+      <!-- 卡片的标题和副标题 -->
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">{{ $L['Login']['Login'] }}</div>
       </div>
 
-      <div class="mdui-textfield mdui-textfield-floating-label">
-        <label class="mdui-textfield-label">{{ $L['Login']['Password'] }}</label>
-        <input class="mdui-textfield-input" type="password" name="password" onkeypress="$.getKey();" required/>
-        <div class="mdui-textfield-error">{{ $L['Login']['PasswordWarn'] }}</div>
+      <!-- 卡片的内容 -->
+      <div class="mdui-card-content">
+        <form method="post" action="">
+        <div class="mdui-textfield mdui-textfield-floating-label">
+          <label class="mdui-textfield-label">{{ $L['Login']['Username'] }}</label>
+          <input class="mdui-textfield-input" type="text" name="name" onkeypress="$.getKey();" required/>
+          <div class="mdui-textfield-error">{{ $L['Login']['UsernameWarn'] }}</div>
+        </div>
+
+        <div class="mdui-textfield mdui-textfield-floating-label">
+          <label class="mdui-textfield-label">{{ $L['Login']['Password'] }}</label>
+          <input class="mdui-textfield-input" type="password" name="password" onkeypress="$.getKey();" required/>
+          <div class="mdui-textfield-error">{{ $L['Login']['PasswordWarn'] }}</div>
+        </div>
+        </form>
       </div>
-      </form>
+
+      <!-- 卡片的按钮 -->
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-ripple reg">{{ $L['Reg']['Submit'] }}</button>
+      </div>
+      </div>
     </div>
-
-<!-- 卡片的按钮 -->
-<div class="mdui-card-actions">
-  <button class="mdui-btn mdui-ripple reg">{{ $L['Login']['Login'] }}</button>
-</div>
-
-</div>
+	<div class="mdui-col">
+      <div class="mdui-card">
+        <div class="mdui-card-media">
+          <img src="https://i.loli.net/2017/08/18/5996975de583f.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="mdui-dialog" id="success">
