@@ -35,9 +35,9 @@ location ^~ /Var/ {
 
 # 客户端配置
 
-目前仅支持 [CustomSkinLoader](https://github.com/xfl03/MCCustomSkinLoader)
+目前理论支持 [CustomSkinLoader](https://github.com/xfl03/MCCustomSkinLoader) 13.1+ 与 UniSkinMod 1.4+
 
-请将 LoadList 中的 root 指定为 /CustomSkin/
+请将 LoadList 中的 root 指定为 /
 
 # 版权
 
