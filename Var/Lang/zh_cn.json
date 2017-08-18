@@ -41,7 +41,8 @@
         "EmptyMsg" : "请勿留空",
         "PasswordVer" : "重复密码",
         "PasswordVerWarn" : "两次输入的密码不一致",
-        "VerMsg" : "两次输入的密码不一致"
+        "VerMsg" : "两次输入的密码不一致",
+        "Submit" : "提交"
     },
 
     "Login" : {
