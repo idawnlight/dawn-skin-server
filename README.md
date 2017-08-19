@@ -1,6 +1,6 @@
 # Dawn Skin Server
 
-[![License](https://poser.pugx.org/scientificdawn/dawn-skin-server/license?format=flat)](https://packagist.org/packages/scientificdawn/dawn-skin-server) [![Latest Stable Version](https://poser.pugx.org/scientificdawn/dawn-skin-server/version?format=flat)](https://packagist.org/packages/scientificdawn/dawn-skin-server) ![](https://img.shields.io/badge/PHP-5.5.38+-blue.svg)
+[![License](https://poser.pugx.org/scientificdawn/dawn-skin-server/license?format=flat)](https://packagist.org/packages/scientificdawn/dawn-skin-server) [![Latest Stable Version](https://poser.pugx.org/scientificdawn/dawn-skin-server/version?format=flat)](https://packagist.org/packages/scientificdawn/dawn-skin-server) ![](https://img.shields.io/badge/PHP-5.5.38+-blue.svg) ![](https://api.travis-ci.org/LiMingYuGuang/dawn-skin-server.svg?branch=master)
 
 超轻量的 Minecraft 皮肤站，仅仅保留最基本的功能，现在，回应您的等待。
 
