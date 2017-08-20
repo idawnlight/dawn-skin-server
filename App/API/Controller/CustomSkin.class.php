@@ -14,7 +14,7 @@
         public function user($var){
             $db = XDO::Database("Account");
             if (!empty($var["username"]) && !empty(current($db->get("Users.where[id={$var["username"]}]"))["skin"])) {
-                //header("content-type: application/json");
+                header("content-type: application/json");
                 $info = array("username"=>$var["username"],
                               "player_name"=>$var["username"],
                               "last_update"=>current($db->get("Users.where[id={$var["username"]}]"))["time"],
