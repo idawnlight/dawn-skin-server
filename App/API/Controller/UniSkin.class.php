@@ -15,7 +15,7 @@
             $db = XDO::Database("Account");
             if (!empty($var["username"]) && !empty(current($db->get("Users.where[id={$var["username"]}]"))["skin"])) {
                 header("content-type: application/json");
-                
+
                 $type = current($db->get("Users.where[id={$var["username"]}]"))["type"];
                 $skin = current($db->get("Users.where[id={$var["username"]}]"))["skin"];
                 $cape = current($db->get("Users.where[id={$var["username"]}]"))["cape"];
@@ -28,6 +28,7 @@
                                              "cape" => null
                                            );
                 $info->cape              = null;
+                
                 if (current($db->get("Users.where[id={$var["username"]}]"))["useCape"]) {
                     $info->skins["cape"] = $cape;
                     $info->cape          = $cape;
