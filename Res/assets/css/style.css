@@ -35,9 +35,10 @@ button.reg {
     left: 10px;
 }
 /* Manage */
-.dss-manage-main {
+@media (min-width: 1024px) {
+  .dss-manage-main {
     width: 50%;
-    /*min-width: 300px;*/
+  }
 }
 /* 强制隐藏抽屉栏 */
 .mdui-drawer-close {
