@@ -7,7 +7,7 @@
         }
     },
     {
-        "base" : "/usn/",
+        "base" : "/usm/",
         "rule" : {
             "{username}.json" : "API.UniSkin:user",
             "textures/{id}" : "API.CustomSkin:res"

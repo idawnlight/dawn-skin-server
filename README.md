@@ -35,9 +35,46 @@ location ^~ /Var/ {
 
 # 客户端配置
 
-目前理论支持 [CustomSkinLoader](https://github.com/xfl03/MCCustomSkinLoader) 13.1+ 与 UniSkinMod 1.4+
+目前理论支持
 
-请将 LoadList 中的 root 指定为 /
+- [CustomSkinLoader](https://github.com/xfl03/MCCustomSkinLoader) 13.1+
+    - 样例 (.minecraft/CustomSkinLoader/CustomSkinLoader.json)
+    ```
+    {
+        "enable": true,
+        "loadlist": [
+            {
+                "name": "ExampleDawnSkin",
+                "type": "CustomSkinAPI",
+                "root": "http://example-dawn-skin.com/"
+            },
+            {
+                "name": "Mojang",
+                "type": "MojangAPI"
+            },
+            {
+                "name": "SkinMe",
+                "type": "UniSkinAPI",
+                "root": "http://www.skinme.cc/uniskin/"
+            }
+        ]
+    }
+    ```
+- UniSkinMod 1.4+
+    - 样例 (.minecraft/config/UniSkinMod/UniSkinMod.json)
+    ```
+    {
+      "rootURIs": [
+        "http://www.skinme.cc/uniskin",
+        "http://example-dawn-skin.com/usm",
+        "http://example.com"
+      ],
+      "legacySkinURIs": [],
+      "legacyCapeURIs": []
+    }
+    ```
+
+没有支持旧版本 Mod 的计划。
 
 # 版权
 
@@ -45,4 +82,4 @@ Dawn Skin Server 程序是基于 GNU General Public License v3.0 开放源代码
 
 程序原作者为 [@LiMingYuGuang](https://emiria.moe/)，转载请注明。
 
-*此 README 基于 [Blessing Skin Server](https://github.com/printempw/blessing-skin-server) 修改*
+*此 README 基于 [Blessing Skin Server](https://github.com/printempw/blessing-skin-server) 的 README 修改<del>，复制粘贴真爽*</del>
