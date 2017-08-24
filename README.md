@@ -60,7 +60,7 @@ location ^~ /Var/ {
         ]
     }
     ```
-- UniSkinMod 1.4+
+- [UniSkinMod](https://github.com/RecursiveG/UniSkinMod) 1.4+
     - 样例 (.minecraft/config/UniSkinMod/UniSkinMod.json)
     ```
     {
