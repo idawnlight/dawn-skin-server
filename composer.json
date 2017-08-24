@@ -5,10 +5,7 @@
     "require": {
         "php": ">=5.5.38",
         "xtlsoft/xdo": "^0.1.2",
-        "ircmaxell/filterus": "^1.0",
-        "j4mie/idiorm": "^1.5",
         "monolog/monolog": "^1.23",
-        "phpmailer/phpmailer": "^5.2",
 		"games647/minecraft-skin-renderer": "0.2.1",
         "abeautifulsite/simpleimage": "3.3.2"
     },

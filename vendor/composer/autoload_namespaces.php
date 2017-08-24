@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'claviska' => array($vendorDir . '/abeautifulsite/simpleimage/src'),
-    'Filterus' => array($vendorDir . '/ircmaxell/filterus/lib'),
 );

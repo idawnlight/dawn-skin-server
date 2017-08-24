@@ -4,7 +4,7 @@
     $GLOBALS['_C']['Language'] = "zh_cn"; //语言 Language
 
     $GLOBALS['_C']['RouteBase'] = ""; //index.php所在相对站点根目录路径
-    $GLOBALS['_C']['Log'] = array( //日志文件名 Log Filename //请勿随意删除或更改 Don't remove
+    $GLOBALS['_C']['Log'] = array( //日志文件名 Log Filename //请勿随意删除或更改 Don't edit or remove
             "INFO" => SysDir."Var/Log/info.log",
             // "WARNING" => SysDir.'Var/Log/warning.log',
             "ERROR" => SysDir.'Var/Log/error.log'

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d14fd8ee74ca9181510083aa8eaa372",
+    "content-hash": "0e1c8214cfd1a3943f5dc56bd2677452",
     "packages": [
         {
             "name": "abeautifulsite/simpleimage",
@@ -90,115 +90,6 @@
                 "skin"
             ],
             "time": "2016-05-16T18:13:41+00:00"
-        },
-        {
-            "name": "ircmaxell/filterus",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ircmaxell/filterus.git",
-                "reference": "6670d75f978b2713e1ec33acbdea73c92216e726"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/ircmaxell/filterus/6670d75f978b2713e1ec33acbdea73c92216e726.zip",
-                "reference": "6670d75f978b2713e1ec33acbdea73c92216e726",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/Filterus/functions.php"
-                ],
-                "psr-0": {
-                    "Filterus": "lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthony Ferrara",
-                    "email": "ircmaxell@php.net",
-                    "homepage": "http://blog.ircmaxell.com"
-                }
-            ],
-            "description": "A library for filtering variables in PHP",
-            "homepage": "https://github.com/ircmaxell/filterus",
-            "keywords": [
-                "filter",
-                "security"
-            ],
-            "time": "2016-08-15T20:09:15+00:00"
-        },
-        {
-            "name": "j4mie/idiorm",
-            "version": "v1.5.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/j4mie/idiorm.git",
-                "reference": "f2f170c44af4761fef8ef34d6dbc237cd95df799"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/j4mie/idiorm/f2f170c44af4761fef8ef34d6dbc237cd95df799.zip",
-                "reference": "f2f170c44af4761fef8ef34d6dbc237cd95df799",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "idiorm.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause",
-                "BSD-3-Clause",
-                "BSD-4-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Simon Holywell",
-                    "email": "treffynnon@php.net",
-                    "homepage": "http://simonholywell.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jamie Matthews",
-                    "email": "jamie.matthews@gmail.com",
-                    "homepage": "http://j4mie.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Durham Hale",
-                    "email": "me@durhamhale.com",
-                    "homepage": "http://durhamhale.com",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
-            "homepage": "http://j4mie.github.com/idiormandparis",
-            "keywords": [
-                "idiorm",
-                "orm",
-                "query builder"
-            ],
-            "time": "2017-03-21T01:31:25+00:00"
         },
         {
             "name": "league/color-extractor",
@@ -331,83 +222,6 @@
                 "psr-3"
             ],
             "time": "2017-06-19T01:22:40+00:00"
-        },
-        {
-            "name": "phpmailer/phpmailer",
-            "version": "v5.2.24",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "22d04c6a58145a244696f3f254c1875aa653b26a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/PHPMailer/PHPMailer/22d04c6a58145a244696f3f254c1875aa653b26a.zip",
-                "reference": "22d04c6a58145a244696f3f254c1875aa653b26a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "php": ">=5.0.0"
-            },
-            "require-dev": {
-                "doctrine/annotations": "1.2.*",
-                "jms/serializer": "0.16.*",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "4.8.*",
-                "symfony/debug": "2.8.*",
-                "symfony/filesystem": "2.8.*",
-                "symfony/translation": "2.8.*",
-                "symfony/yaml": "2.8.*",
-                "zendframework/zend-cache": "2.5.1",
-                "zendframework/zend-config": "2.5.1",
-                "zendframework/zend-eventmanager": "2.5.1",
-                "zendframework/zend-filter": "2.5.1",
-                "zendframework/zend-i18n": "2.5.1",
-                "zendframework/zend-json": "2.5.1",
-                "zendframework/zend-math": "2.5.1",
-                "zendframework/zend-serializer": "2.5.*",
-                "zendframework/zend-servicemanager": "2.5.*",
-                "zendframework/zend-stdlib": "2.5.1"
-            },
-            "suggest": {
-                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "class.phpmailer.php",
-                    "class.phpmaileroauth.php",
-                    "class.phpmaileroauthgoogle.php",
-                    "class.smtp.php",
-                    "class.pop3.php",
-                    "extras/EasyPeasyICS.php",
-                    "extras/ntlm_sasl_client.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
-                    "name": "Marcus Bointon",
-                    "email": "phpmailer@synchromedia.co.uk"
-                },
-                {
-                    "name": "Andy Prevost",
-                    "email": "codeworxtech@users.sourceforge.net"
-                },
-                {
-                    "name": "Brent R. Matzelle"
-                }
-            ],
-            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-07-26T21:00:20+00:00"
         },
         {
             "name": "psr/log",
