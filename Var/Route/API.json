@@ -1,8 +1,15 @@
 [
     {
-        "base" : "/CustomSkin/",
+        "base" : "/csn/",
         "rule" : {
             "{username}.json" : "API.CustomSkin:user",
+            "textures/{id}" : "API.CustomSkin:res"
+        }
+    },
+    {
+        "base" : "/usn/",
+        "rule" : {
+            "{username}.json" : "API.UniSkin:user",
             "textures/{id}" : "API.CustomSkin:res"
         }
     },

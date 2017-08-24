@@ -34,12 +34,24 @@
             } else if ($_SESSION["login"]) {
                 $db = XDO::Database("Account");
                 $id = current($db->get("Users.where[name={$_SESSION["name"]}]"))["skin"];
+            } else {
+                return;
+            }
+            if (isset($_GET["size"])) {
+                $size = $_GET["size"];
+            } else {
+                $size = 5;
+            }
+            if (isset($_GET["type"])) {
+                $type = $_GET["type"];
+            } else {
+                $type = "skin";
             }
             if (file_exists(ResDir . $id . ".png")) {
                 $skin = file_get_contents(ResDir . $id . ".png");
                 header('Content-type: image/png');
                 $skinImage = imagecreatefromstring($skin);
-                $renderedSkin = MinecraftSkins::skin($skinImage, 5);
+                $renderedSkin = MinecraftSkins::$type($skinImage, $size);
                 imagepng($renderedSkin);
             }
         }

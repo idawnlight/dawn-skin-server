@@ -19,7 +19,6 @@
                               "player_name"=>$var["username"],
                               "last_update"=>current($db->get("Users.where[id={$var["username"]}]"))["time"],
                               "textures"=>array(current($db->get("Users.where[id={$var["username"]}]"))["type"]=>current($db->get("Users.where[id={$var["username"]}]"))["skin"]));
-                //print_r($info);
                 if (current($db->get("Users.where[id={$var["username"]}]"))["useCape"]) {
                     $info["textures"]["cape"] = current($db->get("Users.where[id={$var["username"]}]"))["cape"];
                     $info["cape"] = current($db->get("Users.where[id={$var["username"]}]"))["cape"];
