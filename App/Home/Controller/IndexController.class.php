@@ -1,9 +1,4 @@
 <?php
-    /**
-     * Dawn Skin Server
-     * By Dawn
-     *
-     */
 
     namespace Controller\Home;
 

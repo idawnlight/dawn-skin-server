@@ -1,9 +1,4 @@
 <?php
-    /**
-     * Dawn Skin Server
-     * By Dawn
-     *
-     */
 
     namespace Controller\API;
 
@@ -24,20 +19,11 @@
                             $type = "default";
                         }
                         $name = hash("sha256", file_get_contents($_FILES["file"]["tmp_name"]));
-                        echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-                        echo "Type: " . $_FILES["file"]["type"] . "<br />";
-                        echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-                        echo "Stored in: " . $_FILES["file"]["tmp_name"] . "<br />";
-                        echo "SHA256: " . $name . "<br />";
                         if (file_exists("." . $GLOBALS['_C']['RouteBase'] . "/" . "Res/" . $name . ".png")) {
                             echo $name . " already exists. ";
                         } else {
-                            //header("content-type: image/png");
                             $tmp = file_get_contents($_FILES["file"]["tmp_name"]);
-                            //echo $tmp;
                             file_put_contents("./" . "Res/" . $name . ".png", $tmp);
-                            //move_uploaded_file($_FILES["file"]["tmp_name"], $GLOBALS['_C']['RouteBase'] . "/" . "Res/" . $name . ".png");
-                            echo "Stored in: " . "Res/" . $name . ".png";
                             $db = XDO::Database("Res");
                             if ($type == "default") {
                                 $db->ins("Skins", array("id"=>$name, "type"=>"steve"));
@@ -76,20 +62,11 @@
                             $useCape = false;
                         }
                         $name = hash("sha256", file_get_contents($_FILES["file"]["tmp_name"]));
-                        echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-                        echo "Type: " . $_FILES["file"]["type"] . "<br />";
-                        echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-                        echo "Stored in: " . $_FILES["file"]["tmp_name"] . "<br />";
-                        echo "SHA256: " . $name . "<br />";
                         if (file_exists("." . $GLOBALS['_C']['RouteBase'] . "/" . "Res/" . $name . ".png")) {
                             echo $name . " already exists. ";
                         } else {
-                            //header("content-type: image/png");
                             $tmp = file_get_contents($_FILES["file"]["tmp_name"]);
-                            //echo $tmp;
                             file_put_contents("./" . "Res/" . $name . ".png", $tmp);
-                            //move_uploaded_file($_FILES["file"]["tmp_name"], $GLOBALS['_C']['RouteBase'] . "/" . "Res/" . $name . ".png");
-                            echo "Stored in: " . "Res/" . $name . ".png";
                             $db = XDO::Database("Res");
                             $db->ins("Capes", array("id"=>$name));
                         }

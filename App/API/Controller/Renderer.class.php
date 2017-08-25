@@ -1,9 +1,5 @@
 <?php
-/**
- * Dawn Skin Server
- * By Dawn
- *
- */
+
     namespace Controller\API;
 
     use X\Controller;

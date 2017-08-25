@@ -1,9 +1,4 @@
 <?php
-    /**
-     * Dawn Skin Server
-     * By Dawn
-     *
-     */
 
     namespace Controller\API;
 
@@ -14,7 +9,7 @@
         public function user($var){
             $db = XDO::Database("Account");
             if (!empty($var["username"]) && !empty(current($db->get("Users.where[id={$var["username"]}]"))["skin"])) {
-                header("content-type: application/json");
+                header("content-type: application/json; charset=utf-8");
 
                 $type = current($db->get("Users.where[id={$var["username"]}]"))["type"];
                 $skin = current($db->get("Users.where[id={$var["username"]}]"))["skin"];
@@ -34,9 +29,8 @@
                     $info->cape          = $cape;
                 }
 
-                echo json_encode($info);
+                echo json_encode($info, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
             } else {
-                //echo $var["username"];
                 header('HTTP/1.1 404 Not Found');
                 header('status: 404');
                 header("content-type: application/json");

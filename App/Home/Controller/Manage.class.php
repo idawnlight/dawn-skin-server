@@ -1,9 +1,4 @@
 <?php
-    /**
-     * Dawn Skin Server
-     * By Dawn
-     *
-     */
 
     namespace Controller\Home;
 
@@ -15,7 +10,6 @@
         public function main() {
             if ($_SESSION["login"]) {
                 $db = XDO::Database("Account");
-                //$db->clearCache("Users");
                 $this->Data = array(
                         "Page" => "Manage",
                         "name" => $_SESSION["name"],

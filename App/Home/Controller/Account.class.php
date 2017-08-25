@@ -24,9 +24,7 @@
                     header("content-type: application/json");
                     echo '{"status": "empty"}';
                 } else {
-                    //echo "test";
-                    $db = XDO::Database("Account"); //"Test" is the ModelName. We include a Test Model in the `Data` branch.
-                    //print_r($db->get("Users.where[name={$_POST["name"]}]"));  //Get the Data from Config table.
+                    $db = XDO::Database("Account");
                     if (empty($db->get("Users.where[name={$name}]"))) {
                         if (empty($db->get("Users.where[id={$id}]"))) {
                             if ($passwordVer == $password) {
@@ -81,9 +79,7 @@
                     header("content-type: application/json");
                     echo '{"status": "empty"}';
                 } else {
-                    //echo "test";
-                    $db = XDO::Database("Account"); //"Test" is the ModelName. We include a Test Model in the `Data` branch.
-                    //print_r($db->get("Users.where[name={$_POST["name"]}]"));  //Get the Data from Config table.
+                    $db = XDO::Database("Account");
                     if (!empty($db->get("Users.where[name={$name}]"))) {
                         if (password_verify($password, current($db->get("Users.where[name={$name}]"))["password"])) {
                             header("content-type: application/json");
